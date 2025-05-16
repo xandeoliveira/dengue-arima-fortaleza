@@ -1,7 +1,8 @@
 import pandas as pd
 from os import getcwd
-from pmdarima import auto_arima
+from statsforecast import StatsForecast
+from statsforecast.models import AutoARIMA
 
 df = pd.read_csv(getcwd() + "/fortaleza.csv", index_col="SE")
 
-model = auto_arima(df["casos"], m=54, trace=True)
+
