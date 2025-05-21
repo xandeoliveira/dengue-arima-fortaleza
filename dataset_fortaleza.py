@@ -2,7 +2,7 @@ import pandas as pd
 from os import getcwd
 
 # URL da API do INFODENGUE
-url = "https://info.dengue.mat.br/api/alertcity?&disease=dengue&geocode=2304400&disease=dengue&format=csv&ew_start=1&ew_end=53&ey_start=2014&ey_end=2024"
+url = "https://info.dengue.mat.br/api/alertcity?&disease=dengue&geocode=2304400&disease=dengue&format=csv&ew_start=1&ew_end=53&ey_start=2014&ey_end=2025"
 df_fortaleza = pd.read_csv(url, index_col="SE")
 
 # Removendo as variáveis desnecessárias
