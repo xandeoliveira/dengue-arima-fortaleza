@@ -11,4 +11,4 @@ df_filtrado = df_filtrado.rename(columns={"data_iniSE":"ds", "casos":"y"})
 df_filtrado["unique_id"] = "1"
 
 # Salvando dataframe...
-df_filtrado.to_csv(getcwd() + "/dataset/fortaleza-2024.csv")
+df_filtrado.to_csv(getcwd() + "/fortaleza-2024.csv")
