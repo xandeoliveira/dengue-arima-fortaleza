@@ -29,4 +29,4 @@ previsao <- forecast(model, h = 52)
 autoplot(previsao, xlab = 'Tempo', ylab = 'Casos')
 
 previsao
-write.csv(previsao, file = "previsao.csv", row.names = FALSE)
+write.csv(previsao, file = "predicao.csv", row.names = FALSE)
